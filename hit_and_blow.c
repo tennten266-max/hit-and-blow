@@ -13,7 +13,12 @@ int f_pow(int s, int n) {
     return (int)ss;
 }
 
-int n = 4;
+void clear_buffer(void) {
+    int c
+    while( c = getchar() != "¥n")
+}
+
+#define n 4;
 
 int main(void) {
     srand(time(NULL));
