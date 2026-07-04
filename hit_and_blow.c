@@ -15,7 +15,7 @@ int f_pow(int s, int n) {
 
 void clear_buffer(void) {
     int c;
-    while(( c = getchar() ) != '\n' && c != EOF)
+    while(( c = getchar() ) != '\n' && c != EOF);
 }
 
 #define n 4
@@ -33,7 +33,7 @@ int main(void) {
     }
 
     int number = 0;
-    for (int i = 0; i < n; i++)  {
+    for (int i = 0; i < n; i++) {
         number += a[i] * f_pow(10, n-1-i);
     }
 
@@ -72,16 +72,16 @@ int main(void) {
         //hit_count
         for (int i = 0; i < n; i++) {
             if(str[i] == b[i] + '0') {
+                b[i] = -1;
                 hit_count++;
             }
-        ｝
+        }
         
         
         //blow_count
         for (int i = 0; i < n; i++) {       // 入力された文字のループ
             for (int j = 0; j < n; j++) {   // 正解配列のループ
                 if(i != j && str[i] == b[j] + '0') {
-                    
                     b[j] = -1;
                     blow_count++;
                     break;
