@@ -24,6 +24,7 @@ int main(void) {
     srand(time(NULL));
     
     int a[n];
+    int b[n]; //作業列
     do {
         a[0] = rand() % 10;
     } while(a[0] == 0);
@@ -72,14 +73,17 @@ int main(void) {
             if(str[i] == a[i] + '0') {
                 hit_count++;
             }
-        }
+        ｝
+        memcpy( b, a, sizeof(a));
+        
+        
         
         //blow_count
         for (int i = 0; i < n; i++) {       // 入力された文字のループ
             for (int j = 0; j < n; j++) {   // 正解配列のループ
-                if(i != j && str[i] == a[j] + '0') {
+                if(i != j && str[i] == b[j] + '0') {
                     
-                    a[j] = -1;
+                    b[j] = -1;
                     blow_count++;
                     break;
                 }
