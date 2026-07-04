@@ -14,11 +14,11 @@ int f_pow(int s, int n) {
 }
 
 void clear_buffer(void) {
-    int c
-    while(( c = getchar() ) != '¥n' && c != EOF)
+    int c;
+    while(( c = getchar() ) != '\n' && c != EOF)
 }
 
-#define n 4;
+#define n 4
 
 int main(void) {
     srand(time(NULL));
@@ -67,15 +67,14 @@ int main(void) {
             }
             
         
-
+        memcpy( b, a, sizeof(a));
+        
         //hit_count
         for (int i = 0; i < n; i++) {
-            if(str[i] == a[i] + '0') {
+            if(str[i] == b[i] + '0') {
                 hit_count++;
             }
         ｝
-        memcpy( b, a, sizeof(a));
-        
         
         
         //blow_count
