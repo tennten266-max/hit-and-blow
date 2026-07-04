@@ -15,7 +15,7 @@ int f_pow(int s, int n) {
 
 void clear_buffer(void) {
     int c
-    while( c = getchar() != "¥n")
+    while(( c = getchar() ) != '¥n' && c != EOF)
 }
 
 #define n 4;
@@ -49,7 +49,7 @@ int main(void) {
         printf("what do you think number is ?\n");
         if(scanf("%d", &response) != 1) {
             printf("数字を入力してください\n\n");
-            getchar();
+            clear_buffer();
             continue;
         } 
             char str[256];
