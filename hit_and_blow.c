@@ -73,8 +73,10 @@ int main(void) {
         for (int i = 0; i < n; i++) {       // 入力された文字のループ
             for (int j = 0; j < n; j++) {   // 正解配列のループ
                 if(i != j && str[i] == a[j] + '0') {
-                    break;
+                    
+                    a[j] = -1;
                     blow_count++;
+                    break;
                 }
             }
         }
