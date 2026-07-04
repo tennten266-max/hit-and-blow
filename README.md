@@ -20,3 +20,25 @@ C言語で実装された、4桁の数字を当てる「ヒット＆ブロー（
 ### コンパイル例 (GCC)
 ```bash
 gcc -o hit_and_blow main.c
+
+```
+
+#### 入力データ
+```
+1234
+```
+
+#### 出力データ
+
+```
+桁数は4です
+1回目の挑戦です
+what do you think number is ?
+1234
+hit_count = 0
+blow_count = 2
+
+2回目の挑戦です
+what do you think number is ?
+
+```
