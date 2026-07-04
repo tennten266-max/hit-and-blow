@@ -73,6 +73,7 @@ int main(void) {
         for (int i = 0; i < n; i++) {
             if(str[i] == b[i] + '0') {
                 b[i] = -1;
+                str[i] = 'X';
                 hit_count++;
             }
         }
